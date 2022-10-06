@@ -18,6 +18,8 @@
    - click create at the bottom of the page
 
 ## Commands used to set up the operating system (os) image
+1. first thing to do always when working in a new remote environment | ``` sudo apt-get update ```
+2. 
 
 ## How to make mysql instance available to external computers
 
