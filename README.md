@@ -36,6 +36,9 @@
       - IDENTIFY BY --> what is the password
       - 'ahi2020' --> password
    - how to check if this command works | ``` select * from mysql.user; ``` | this provides a better looking list --> ``` select * from mysql.user \G ```
-- 
+   - grant priveledges to user | ``` GRANT ALL PRIVILEGES ON *.* TO 'brittany'@'%' WITH GRANT OPTION; ```` 
+     - To Confirm: ``` show grants for dba; ```
 
 ## Inserting dataset into mysql database
+- to create a database run this code | ``` create database 'dbnamegoeshere'; ```
+- to display a new set of databases run ``` show databases; ```
