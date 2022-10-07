@@ -18,9 +18,24 @@
    - click create at the bottom of the page
 
 ## Commands used to set up the operating system (os) image
-1. first thing to do always when working in a new remote environment | ``` sudo apt-get update ```
-2. 
+1. First thing to do always when working in a new remote environment | ``` sudo apt-get update ```
+2. Install MYSQL server and MYSQL client | ``` sudo apt install mysql-server mysql-client ```
+3. You can now login to mysql using this command | ``` sudo mysql ```
+
+## Basic Commands in mysql server
+- ``` show databases; ```
 
 ## How to make mysql instance available to external computers
+- to make mysql database available to external computers we must create users
+   -  use this command to create a new user | ``` CREATE USER 'dba'@'%' IDENTIFIED BY 'ahi2020'; ```
+      - CREATE --> what we're asking the machine to do
+      - USER --> what we're asking the machine to create
+      - 'dba' --> the username
+      - @ --> in other words it is pointing to the question 'where'
+      - '%' --> wild card for who can connect stating the user can connect from multiple machines or anywhere
+      - IDENTIFY BY --> what is the password
+      - 'ahi2020' --> password
+   - how to check if this command works | ``` select * from mysql.user; ``` | this provides a better looking list --> ``` select * from mysql.user \G ```
+- 
 
-## inserting dataset into mysql database
+## Inserting dataset into mysql database
