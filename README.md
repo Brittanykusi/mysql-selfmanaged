@@ -42,3 +42,6 @@
 ## Inserting dataset into mysql database
 - to create a database run this code | ``` create database 'dbnamegoeshere'; ```
 - to display a new set of databases run ``` show databases; ```
+
+## inserting datset into table
+- https://github.com/Brittanykusi/mysql-selfmanaged/blob/1384f6b1cb162949a7c72c85308f2a442b81da71/selfmanaged.py#L1-L32
