@@ -32,7 +32,7 @@
       - USER --> what we're asking the machine to create
       - 'dba' --> the username
       - @ --> in other words it is pointing to the question 'where'
-      - '%' --> wild card for who can connect stating the user can connect from multiple machines or anywhere
+      - '%' --> wild card for who can connect stating the user can connect from multiple machines or anywhere.
       - IDENTIFY BY --> what is the password
       - 'ahi2020' --> password
    - how to check if this command works | ``` select * from mysql.user; ``` | this provides a better looking list --> ``` select * from mysql.user \G ```
