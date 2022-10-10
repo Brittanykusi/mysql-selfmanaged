@@ -1,13 +1,18 @@
+from dotenv import load_dotenv
+
+load_dotenv()
+
 from sqlalchemy import create_engine
 import sqlalchemy
 import pandas as pd
+import os
 
 
 MYSQL_HOSTNAME = '35.188.202.5' # you probably don't need to change this
 
-MYSQL_USER = 'brittany'
+MYSQL_USER = os.getenv('MYSQL_USER')
 
-MYSQL_PASSWORD = 'brittany'
+MYSQL_PASSWORD = os.getenv('MYSQL_password')
 
 MYSQL_DATABASE = 'db1'
 
